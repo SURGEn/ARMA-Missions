@@ -31,7 +31,7 @@ class Header
 
 // The following variables have no relevance to the game if not used with the rest of the template scripts
 // Edit the values below to change template settings
-SXP_customLoadouts = 0;			// Set to 1 to enable loading custom loadouts for player units
+SXP_customLoadouts = 1;			// Set to 1 to enable loading custom loadouts for player units
 SXP_customVehicleCargo = 0;		// Set to 1 to enable custom vehicle inventories - Currently unused
 SXP_zeus_removeNVGs = 0;		// Set to 1 to remove NVGs from zeus-spawned units
 SXP_zeus_customLoadouts = 0;	// Set to 1 to enable loading custom loadouts for zeus-spawned units - Currently unused
