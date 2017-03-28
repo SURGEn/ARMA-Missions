@@ -29,7 +29,7 @@ class loadouts
 	{
 		displayName = "Ancap Team Leader"; // Currently unused, basically just a human-readable name for the loadout
 		
-				weapons[] = {"CUP_arifle_Mk16_STD", "hgun_Pistol_heavy_01_F", "Rangefinder"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
+		weapons[] = {"CUP_arifle_Mk16_STD", "hgun_Pistol_heavy_01_F", "Rangefinder"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"optic_Hamr", "30Rnd_556x45_Stanag_red"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
 		handgunItems[] = {"optic_MRD", "11Rnd_45ACP_Mag"}; // Handgun items. Includes magazine you want loaded initially.

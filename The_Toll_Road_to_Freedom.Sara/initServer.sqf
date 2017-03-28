@@ -8,11 +8,15 @@
 // Initialize our headless client variables
 sxp_hc_clientID = 0;
 sxp_hc_enabled = false;
+sxp_hc_zeusEnabled = true;
 
 // Push the HC variables to all clients
 {
 	publicVariable _x;
-} forEach ["sxp_hc_clientID", "sxp_hc_enabled"];
+} forEach ["sxp_hc_clientID", "sxp_hc_enabled", "sxp_hc_zeusEnabled"];
+
+// Add the event handler for handling HC disconnects
+addMissionEventHandler ["PlayerDisconnected", {_this call SXP_fnc_hcDisconnect;}];
 
 // Create a list of mission objects that should not be curator editable
 private "_blacklistedMissionObjects";
