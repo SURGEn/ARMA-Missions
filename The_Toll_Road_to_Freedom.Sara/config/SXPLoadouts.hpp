@@ -235,7 +235,7 @@ class loadouts
 		backpackItems[] = {{"ACE_fieldDressing", 60}, {"ACE_epinephrine", 20}, {"ACE_morphine", 30}, {"ACE_bloodIV", 15}}; // Items to place in backpack. Includes weapon magazines
 	};
 	
-	class I_engineer_F
+	class I_G_Soldier_SL_F
 	{
 		displayName = "Ancap Recon Squad Leader"; // Currently unused, basically just a human-readable name for the loadout
 		
@@ -256,7 +256,7 @@ class loadouts
 		backpackItems[] = {}; // Items to place in backpack. Includes weapon magazines
 	};
 	
-	class I_support_GMG_F
+	class CUP_I_GUE_Soldier_Scout
 	{
 		displayName = "Ancap Recon Scout"; // Currently unused, basically just a human-readable name for the loadout
 		
@@ -277,7 +277,7 @@ class loadouts
 		backpackItems[] = {}; // Items to place in backpack. Includes weapon magazines
 	};
 	
-	class I_support_MG_F
+	class I_G_Soldier_M_F
 	{
 		displayName = "Ancap Recon Marksman"; // Currently unused, basically just a human-readable name for the loadout
 		
@@ -294,11 +294,11 @@ class loadouts
 		
 		linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemMicroDAGR"}; // Linked items for the unit, use for map, compass, radio, watch, gps, and NVGs
 		uniformItems[] = {{"ACE_fieldDressing", 10}, {"ACE_epinephrine", 2}, {"ACE_morphine", 4}, {"ItemcTabHCam",1}, {"ACE_EntrenchingTool",1}}; // Items to place in uniform. Includes weapon magazines
-		vestItems[] = {{"11Rnd_45ACP_Mag", 2}, {"SmokeShell", 1}, {"SmokeShellBlue", 1}, {"CUP_20Rnd_TE1_Red_Tracer_762x51_M110", 3}}; // Items to place in vest. Includes weapon magazines
+		vestItems[] = {{"11Rnd_45ACP_Mag", 2}, {"SmokeShell", 1}, {"SmokeShellBlue", 1}, {"CUP_20Rnd_TE1_Red_Tracer_762x51_M110", 5}}; // Items to place in vest. Includes weapon magazines
 		backpackItems[] = {}; // Items to place in backpack. Includes weapon magazines
 	};
 	
-	class I_Spotter_F
+	class I_G_medic_F
 	{
 		displayName = "Ancap Recon CLS"; // Currently unused, basically just a human-readable name for the loadout
 		
@@ -332,27 +332,6 @@ class loadouts
 		headgearClass = "H_PilotHelmetHeli_B";
 		facewearClass = "";
 		vestClass = "V_Chestrig_blk";
-		backpackClass = "";
-		
-		linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemMicroDAGR"}; // Linked items for the unit, use for map, compass, radio, watch, gps, and NVGs
-		uniformItems[] = {{"ACE_fieldDressing", 10}, {"ACE_epinephrine", 2}, {"ACE_morphine", 4}, {"ItemcTabHCam",1}, {"ACE_EntrenchingTool",1}}; // Items to place in uniform. Includes weapon magazines
-		vestItems[] = {{"11Rnd_45ACP_Mag", 2}, {"30Rnd_556x45_Stanag_red", 2}}; // Items to place in vest. Includes weapon magazines
-		backpackItems[] = {}; // Items to place in backpack. Includes weapon magazines
-	};
-	
-	class I_helicrew_F
-	{
-		displayName = "Ancap Crew"; // Currently unused, basically just a human-readable name for the loadout
-		
-		weapons[] = {"CUP_arifle_Mk16_CQC", "hgun_Pistol_heavy_01_F", "Binocular"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
-		primaryWeaponItems[] = {"30Rnd_556x45_Stanag_red"}; // Primary weapon items. Includes magazine you want loaded initially
-		secondaryWeaponItems[] = {}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
-		handgunItems[] = {"11Rnd_45ACP_Mag"}; // Handgun items. Includes magazine you want loaded initially.
-		
-		uniformClass = "U_B_JaKdo_black";
-		headgearClass = "CUP_H_PMC_Cap_Back_EP_Grey";
-		facewearClass = "";
-		vestClass = "V_Chestrig_blk";
 		backpackClass = "B_AssaultPack_blk";
 		
 		linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemMicroDAGR"}; // Linked items for the unit, use for map, compass, radio, watch, gps, and NVGs
@@ -360,6 +339,7 @@ class loadouts
 		vestItems[] = {{"11Rnd_45ACP_Mag", 2}, {"30Rnd_556x45_Stanag_red", 2}}; // Items to place in vest. Includes weapon magazines
 		backpackItems[] = {{"toolkit", 1}}; // Items to place in backpack. Includes weapon magazines
 	};
+	
 	
 	
 };
