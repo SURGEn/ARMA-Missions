@@ -30,7 +30,7 @@ class loadouts
 		displayName = "Ancap Squad Leader"; // Currently unused, basically just a human-readable name for the loadout
 		
 		weapons[] = {"CUP_arifle_Mk16_STD", "hgun_Pistol_heavy_01_F", "Rangefinder"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
-		primaryWeaponItems[] = {"CUP_optic_HoloDesert", "30Rnd_556x45_Stanag_Tracer_Red"}; // Primary weapon items. Includes magazine you want loaded initially
+		primaryWeaponItems[] = {"optic_Hamr", "30Rnd_556x45_Stanag_Tracer_Red"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
 		handgunItems[] = {"optic_MRD", "11Rnd_45ACP_Mag"}; // Handgun items. Includes magazine you want loaded initially.
 		
@@ -51,7 +51,7 @@ class loadouts
 		displayName = "Ancap Team Leader"; // Currently unused, basically just a human-readable name for the loadout
 		
 		weapons[] = {"CUP_arifle_Mk16_STD", "hgun_Pistol_heavy_01_F", "Rangefinder"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
-		primaryWeaponItems[] = {"CUP_optic_HoloDesert", "30Rnd_556x45_Stanag_Tracer_Red"}; // Primary weapon items. Includes magazine you want loaded initially
+		primaryWeaponItems[] = {"optic_Hamr", "30Rnd_556x45_Stanag_Tracer_Red"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
 		handgunItems[] = {"optic_MRD", "11Rnd_45ACP_Mag"}; // Handgun items. Includes magazine you want loaded initially.
 		
@@ -253,7 +253,7 @@ class loadouts
 		linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemMicroDAGR"}; // Linked items for the unit, use for map, compass, radio, watch, gps, and NVGs
 		uniformItems[] = {{"ACE_fieldDressing", 10}, {"ACE_epinephrine", 2}, {"ACE_morphine", 4}, {"ItemcTabHCam",1}, {"ACE_EntrenchingTool",1}}; // Items to place in uniform. Includes weapon magazines
 		vestItems[] = {{"ACE_fieldDressing", 15}, {"ACE_epinephrine", 3}, {"ACE_morphine", 5}, {"11Rnd_45ACP_Mag", 2}, {"SmokeShell", 1}, {"SmokeShellBlue", 1}, {"30Rnd_556x45_Stanag_Tracer_Red", 5}}; // Items to place in vest. Includes weapon magazines
-		backpackItems[] = {}; // Items to place in backpack. Includes weapon magazines
+		backpackItems[] = {{"CUP_20Rnd_TE1_Red_Tracer_762x51_M110", 2}}; // Items to place in backpack. Includes weapon magazines
 	};
 	
 	class CUP_I_GUE_Soldier_Scout
@@ -273,7 +273,7 @@ class loadouts
 		
 		linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemMicroDAGR"}; // Linked items for the unit, use for map, compass, radio, watch, gps, and NVGs
 		uniformItems[] = {{"ACE_fieldDressing", 10}, {"ACE_epinephrine", 2}, {"ACE_morphine", 4}, {"ItemcTabHCam",1}, {"ACE_EntrenchingTool",1}}; // Items to place in uniform. Includes weapon magazines
-		vestItems[] = {{"11Rnd_45ACP_Mag", 2}, {"SmokeShell", 1}, {"SmokeShellBlue", 1}, {"30Rnd_556x45_Stanag_Tracer_Red", 5}}; // Items to place in vest. Includes weapon magazines
+		vestItems[] = {{"11Rnd_45ACP_Mag", 2}, {"SmokeShell", 1}, {"SmokeShellBlue", 1}, {"30Rnd_556x45_Stanag_Tracer_Red", 5}, {"CUP_20Rnd_TE1_Red_Tracer_762x51_M110", 2}}; // Items to place in vest. Includes weapon magazines
 		backpackItems[] = {}; // Items to place in backpack. Includes weapon magazines
 	};
 	

@@ -11,3 +11,4 @@ _this params ["_player", "_jip"];
 [] execVM "scripts\zeusMenu.sqf";
 
 // Add any mission-specific code after this point
+[] execVM "scripts\raiseflag.sqf";

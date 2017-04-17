@@ -38,3 +38,4 @@ _blacklistedMissionObjects = [];
 [] execVM "scripts\tasks.sqf";
 
 // Add any mission specific code after this point
+[] execVM "scripts\patches.sqf";

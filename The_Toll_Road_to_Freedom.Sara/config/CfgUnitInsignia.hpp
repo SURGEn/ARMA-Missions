@@ -10,4 +10,18 @@ class cfgUnitInsignia
 		author = "TMTM";
 		texture = "media\insignia\tmtm.paa";
 	};
+	
+	class ancap
+	{
+		displayName = "Anarcho Capitalism";
+		author = "Ayn Rand";
+		texture = "media\insignia\ancapflag.paa";
+	};
+	
+	class ancom
+	{
+		displayName = "Anarcho Communism";
+		author = "Some Pinko Faggot";
+		texture = "media\insignia\ancomflag.paa";
+	};
 };
