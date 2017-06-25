@@ -207,8 +207,8 @@ for [{_i = 0}, {_i < factoryCivCount}, {_i = _i + 1}] do
 
 
 //Setup complications at each terror site
-mineStuffArray = [mineCivArray, "mineCivMarker", mineBombs, mineDeadman, "situationMine", commsBombCount];
-factoryStuffArray = [factoryCivArray, "factoryCivMarker", factoryBombs, factoryDeadman, "situationFactory", commsBombCount];
+mineStuffArray = [mineCivArray, "mineCivMarker", mineBombs, mineDeadman, "situationMine", mineBombCount];
+factoryStuffArray = [factoryCivArray, "factoryCivMarker", factoryBombs, factoryDeadman, "situationFactory", factoryBombCount];
 commsStuffArray = [commsCivArray, "commsCivMarker", commsBombs, commsDeadman, "situationComms", commsBombCount];
 situationsArray = ([mineStuffArray, factoryStuffArray, commsStuffArray] call BIS_fnc_arrayShuffle);
 enemyClothing = situationsArray select 0;
@@ -225,7 +225,7 @@ civilianCall = situationsArray select 2;
 
 //setup deadswitch trigger carrier
 deadmanSwitch params ["_civilians", "_marker", "_bombs", "_deadman", "_task", "_bombCount"];
-_deadman addEventHandler ["killed", { [(deadmanSwitch select 2), (((deadmanSwitch select 4) call BIS_fnc_taskChildren) select 180), (deadmanSwitch select 5), 0] remoteExec ["MLY_fnc_detonateBombs", 2]}];
+_deadman addEventHandler ["killed", { [(deadmanSwitch select 2), (((deadmanSwitch select 4) call BIS_fnc_taskChildren) select 0), (deadmanSwitch select 5), 180] remoteExec ["MLY_fnc_detonateBombs", 2]}];
 _deadman forceAddUniform "CUP_U_O_SLA_Urban";
 _deadman addHeadgear "H_ShemagOpen_khk";
 
@@ -235,4 +235,9 @@ _marker setMarkerAlpha 1;
 _descUpdate = "UPDATE: A civilian has managed to contact 911 on their cellphone, and from the information we've managed to determine their location, it is marked on the map.";
 [_task, [_descUpdate, ((_task call BIS_fnc_taskDescription) select 1), ((_task call BIS_fnc_taskDescription) select 2)]] call BIS_fnc_taskSetDescription; 
 
-
+[factoryBombs, "bombsFactory", factoryBombCount, 6000] remoteExec ["MLY_fnc_detonateBombs", 2];
+[commsBombs, "bombsComms", commsBombCount, 6000] remoteExec ["MLY_fnc_detonateBombs", 2];
+[mineBombs, "bombsMine", mineBombCount, 6000] remoteExec ["MLY_fnc_detonateBombs", 2];
+[factoryCivilians, 6000] remoteExec ["MLY_fnc_executeCivilians", 2];
+[mineCivilians, 6000] remoteExec ["MLY_fnc_executeCivilians", 2];
+[commsCivilians, 6000] remoteExec ["MLY_fnc_executeCivilians", 2];

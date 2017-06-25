@@ -62,6 +62,7 @@ class cfgFunctions
 		class mission
 		{
 			class detonateBombs {};
+			class executeCivilians {};
 		}
 	}
 	// If you need to add additional functions, create a new section below using your tag of choice (Ex: SXP = Superxpdude)

@@ -69,6 +69,102 @@ switch (toLower (_this select 0)) do {
 			["bombsComms", "SUCCEEDED", true] call BIS_fnc_taskSetState;
 		};
 	};
+	
+	case "mine_civs_rescued": {
+		if(({alive _x} count units mineCivilians) < 3) 
+		then
+		{
+			["hostagesMine", "FAILED", true] call BIS_fnc_taskSetState;
+		} else
+		{
+			["hostagesMine", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+		};
+		
+		hint format ["%1",  ({alive _x} count units mineCivilians)];
+	};
+	
+	case "factory_civs_rescued": {
+		if(({alive _x} count units factoryCivilians) < 3) 
+		then
+		{
+			["hostagesFactory", "FAILED", true] call BIS_fnc_taskSetState;
+		} else
+		{
+			["hostagesFactory", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+		};
+		hint format ["%1",  ({alive _x} count units factoryCivilians)];
+	};
+	
+	case "comms_civs_rescued": {
+		if(({alive _x} count units commsCivilians) < 3) 
+		then
+		{
+			["hostagesComms", "FAILED", true] call BIS_fnc_taskSetState;
+		} else
+		{
+			["hostagesComms", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+		};
+		hint format ["%1",  ({alive _x} count units commsCivilians)];
+	};
+	
+	case "mine_situation_resolved": {
+		if(("bombsMine" call BIS_fnc_taskState isEqualTo "FAILED") && ("hostagesMine" call BIS_fnc_taskState isEqualTo "FAILED")) 
+		then
+		{
+			["situationMine", "FAILED", true] call BIS_fnc_taskSetState;
+		} else 
+		{
+			["situationMine", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+		};
+	};
+	
+	case "factory_situation_resolved": {
+		if(("bombsFactory" call BIS_fnc_taskState isEqualTo "FAILED") && ("hostagesFactory" call BIS_fnc_taskState isEqualTo "FAILED")) 
+		then
+		{
+			["situationFactory", "FAILED", true] call BIS_fnc_taskSetState;
+		} else 
+		{
+			["situationFactory", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+		};
+	};
+	
+	case "comms_situation_resolved": {
+		if(("bombsComms" call BIS_fnc_taskState isEqualTo "FAILED") && ("hostagesComms" call BIS_fnc_taskState isEqualTo "FAILED")) 
+		then
+		{
+			["situationComms", "FAILED", true] call BIS_fnc_taskSetState;
+		} else 
+		{
+			["situationComms", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+		};
+	};
+	
+	case "attack_resolved": {
+		objectives = ("situationComms" call BIS_fnc_taskChildren) + ("situationMine" call BIS_fnc_taskChildren) + ("situationFactory" call BIS_fnc_taskChildren);
+		objectivesFailed = ({_x call BIS_fnc_taskState isEqualTo "FAILED"} count objectives);
+		hint format ["%1",  objectivesFailed];
+		if(objectivesFailed == 5 || objectivesFailed == 6) then 
+		{
+			["stopTerrorists", "FAILED", true] call BIS_fnc_taskSetState;
+			["majorLoss", false, true, true, false] remoteExec ["BIS_fnc_endMission"]
+		};
+		if(objectivesFailed == 4) then 
+		{
+			["stopTerrorists", "FAILED", true] call BIS_fnc_taskSetState;
+			["minorLoss", false, true, true, false] remoteExec ["BIS_fnc_endMission"]
+		};
+		if(objectivesFailed == 3 || objectivesFailed == 2) then 
+		{
+			["stopTerrorists", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+			["minorVictory", true, true, true, false] remoteExec ["BIS_fnc_endMission"]
+		};
+		if(objectivesFailed == 1 || objectivesFailed == 0) then 
+		{
+			["stopTerrorists", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+			["majorVictory", true, true, true, false] remoteExec ["BIS_fnc_endMission"]
+		};
+	}
 };
 
 
