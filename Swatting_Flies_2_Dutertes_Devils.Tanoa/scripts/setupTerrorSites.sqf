@@ -199,7 +199,6 @@ for [{_i = 0}, {_i < factoryCivCount}, {_i = _i + 1}] do
 	{
 		hideObjectGlobal _x;
 	} forEach _x;
-	
 } forEach [_factoryCivLocationsA, _factoryCivLocationsB, _factoryCivLocationsC];
 "factoryCivMarker" setMarkerPos [position (factoryCivArray select 0) select 0, position (factoryCivArray select 0) select 1];
 "factoryCivMarker" setMarkerAlpha 0;
