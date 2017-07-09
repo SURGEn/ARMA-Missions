@@ -23,6 +23,6 @@ if ((getMissionConfigValue "SXP_customLoadouts") == 1) then {
 [_newUnit] remoteExec ["SXP_fnc_addUnitToZeus", 2];
 
 // Sets the insignia of the unit to the TMTM insignia
-[_newUnit, "tmtm"] remoteExec ["BIS_fnc_setUnitInsignia", 0, true];
+//[_newUnit, "tmtm"] remoteExec ["BIS_fnc_setUnitInsignia", 0, true];
 
 // Add any mission specific code after this point

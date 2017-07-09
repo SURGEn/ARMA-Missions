@@ -1,18 +1,18 @@
 //-------------------- Mission Information
 
-author = "";					// Author name visible on loading screen
-briefingName = "";				// Name visible in mission select screen
-overviewText = "";				// Description visible in mission select screen
+author = "The Ghost of O'Mally";					// Author name visible on loading screen
+briefingName = "Swatting Flies 2: Duterte's Devils v0.91";				// Name visible in mission select screen
+overviewText = "ISIS attempts a series of hostage situations in the Phillipines";				// Description visible in mission select screen
 //overviewPicture = "";			// Image visible in mission select screen. Leave commented, still doesn't work properly.
-onLoadName = "";				// Name visible on loading screen
-onLoadMission = "";				// Description visible on loading screen
+onLoadName = "SF 2: Duterte's Devils";				// Name visible on loading screen
+onLoadMission = "SWAT moves to defuse a series of hostage and bomb situations.";				// Description visible on loading screen
 //loadScreen = "media\loadscreen.paa"; // Image visible on loading screen
 
 class Header
 {
 	gameType = COOP;			// https://community.bistudio.com/wiki/Multiplayer_Game_Types
 	minPlayers = 1;				// Minimum amount of players needed for the mission
-	maxPlayers = 16;			// Maximum amount of players the mission supports
+	maxPlayers = 31;			// Maximum amount of players the mission supports
 };
 
 //-------------------- Defines
@@ -58,7 +58,7 @@ saving = 0;						// Disable saving for multiplayer missions
 // https://community.bistudio.com/wiki/Arma_3_Respawn
 
 respawn = 3;					// 3 is BASE respawn
-respawnDelay = 120;				// Respawn delay in seconds
+respawnDelay = 180;				// Respawn delay in seconds
 respawnVehicleDelay = 1800;		// Vehicle respawn delay in seconds
 respawnDialog = 0;				// Disables showing scoreboard when respawning
 respawnOnStart = 0;				// Respawns players at the start of the mission. Leave this off for most cases.

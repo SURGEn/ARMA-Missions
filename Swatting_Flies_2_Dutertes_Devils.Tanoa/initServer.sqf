@@ -38,8 +38,27 @@ _blacklistedMissionObjects = [];
 [] execVM "scripts\tasks.sqf";
 
 // Add any mission specific code after this point
+call SXP_fnc_setupTFAR;
 
 //[] execVM "scripts\setupBombs.sqf";
 //[] execVM "scripts\setupHostages.sqf";
 //[] execVM "scripts\setupSurprises.sqf";
 [] execVM "scripts\setupTerrorSites.sqf";
+
+// slideshow (thanks whale)
+
+_null = [] spawn {
+	waitUntil{sleep 5; (time > 5)};
+	projector_pause = false;
+	_imgArray = ['media\ss\1.jpg','media\ss\2.jpg','media\ss\3.jpg','media\ss\4.jpg'];
+	_iA = 0;
+	projected setObjectMaterialGlobal [0, "\a3\data_f\default.rvmat"];
+	while {true} do
+	{
+		if (_iA >= count _imgArray) then {_iA = 0};
+		projected setObjectTextureGlobal [0, (_imgArray select _iA)];
+		_iA = _iA + 1;
+		sleep 20;
+		waitUntil{sleep 1;!projector_pause};
+	};
+};

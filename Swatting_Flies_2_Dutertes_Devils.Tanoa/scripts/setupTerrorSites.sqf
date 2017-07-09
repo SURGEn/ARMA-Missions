@@ -226,7 +226,8 @@ civilianCall = situationsArray select 2;
 //setup deadswitch trigger carrier
 deadmanSwitch params ["_civilians", "_marker", "_bombs", "_deadman", "_task", "_bombCount"];
 _deadman addEventHandler ["killed", { [(deadmanSwitch select 2), (((deadmanSwitch select 4) call BIS_fnc_taskChildren) select 0), (deadmanSwitch select 5), 180] remoteExec ["MLY_fnc_detonateBombs", 2]}];
-_deadman forceAddUniform "CUP_U_O_SLA_Urban";
+removeUniform _deadman;
+_deadman addUniform "CUP_U_O_SLA_Urban";
 _deadman addHeadgear "H_ShemagOpen_khk";
 
 //setup civilian calling in information
@@ -235,9 +236,10 @@ _marker setMarkerAlpha 1;
 _descUpdate = "UPDATE: A civilian has managed to contact 911 on their cellphone, and from the information we've managed to determine their location, it is marked on the map.";
 [_task, [_descUpdate, ((_task call BIS_fnc_taskDescription) select 1), ((_task call BIS_fnc_taskDescription) select 2)]] call BIS_fnc_taskSetDescription; 
 
-[factoryBombs, "bombsFactory", factoryBombCount, 6000] remoteExec ["MLY_fnc_detonateBombs", 2];
-[commsBombs, "bombsComms", commsBombCount, 6000] remoteExec ["MLY_fnc_detonateBombs", 2];
-[mineBombs, "bombsMine", mineBombCount, 6000] remoteExec ["MLY_fnc_detonateBombs", 2];
-[factoryCivilians, 6000] remoteExec ["MLY_fnc_executeCivilians", 2];
-[mineCivilians, 6000] remoteExec ["MLY_fnc_executeCivilians", 2];
-[commsCivilians, 6000] remoteExec ["MLY_fnc_executeCivilians", 2];
+//setup bomb/execution timers
+[factoryBombs, "bombsFactory", factoryBombCount, 300] remoteExec ["MLY_fnc_detonateBombs", 2];
+[commsBombs, "bombsComms", commsBombCount, 300] remoteExec ["MLY_fnc_detonateBombs", 2];
+[mineBombs, "bombsMine", mineBombCount, 300] remoteExec ["MLY_fnc_detonateBombs", 2];
+[factoryCivilians, 100] remoteExec ["MLY_fnc_executeCivilians", (owner (units factoryCivilians select 0))];
+[mineCivilians, 100] remoteExec ["MLY_fnc_executeCivilians", (owner (units mineCivilians select 0))];
+[commsCivilians, 100] remoteExec ["MLY_fnc_executeCivilians", (owner (units commsCivilians select 0))];
