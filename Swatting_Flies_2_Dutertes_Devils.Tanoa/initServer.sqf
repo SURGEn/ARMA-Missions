@@ -48,7 +48,7 @@ call SXP_fnc_setupTFAR;
 _null = [] spawn {
 	waitUntil{sleep 5; (time > 5)};
 	projector_pause = false;
-	_imgArray = ['media\ss\1.jpg','media\ss\2.jpg','media\ss\3.jpg','media\ss\4.jpg', 'media\ss\5.jpg'];
+	_imgArray = ['media\ss\img1.jpg','media\ss\img2.jpg','media\ss\img3.jpg','media\ss\img4.jpg', 'media\ss\img5.jpg'];
 	_iA = 0;
 	projected setObjectMaterialGlobal [0, "\a3\data_f\default.rvmat"];
 	while {true} do
