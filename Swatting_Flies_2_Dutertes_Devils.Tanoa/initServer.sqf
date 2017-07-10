@@ -5,6 +5,7 @@
 // Initialise dynamic groups
 ["Initialize", [true]] call BIS_fnc_dynamicGroups;
 
+
 // Initialize our headless client variables
 sxp_hc_clientID = 0;
 sxp_hc_enabled = false;
@@ -39,18 +40,15 @@ _blacklistedMissionObjects = [];
 
 // Add any mission specific code after this point
 call SXP_fnc_setupTFAR;
-
-//[] execVM "scripts\setupBombs.sqf";
-//[] execVM "scripts\setupHostages.sqf";
-//[] execVM "scripts\setupSurprises.sqf";
 [] execVM "scripts\setupTerrorSites.sqf";
+
 
 // slideshow (thanks whale)
 
 _null = [] spawn {
 	waitUntil{sleep 5; (time > 5)};
 	projector_pause = false;
-	_imgArray = ['media\ss\1.jpg','media\ss\2.jpg','media\ss\3.jpg','media\ss\4.jpg'];
+	_imgArray = ['media\ss\1.jpg','media\ss\2.jpg','media\ss\3.jpg','media\ss\4.jpg', 'media\ss\5.jpg'];
 	_iA = 0;
 	projected setObjectMaterialGlobal [0, "\a3\data_f\default.rvmat"];
 	while {true} do

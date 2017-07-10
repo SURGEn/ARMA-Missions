@@ -148,11 +148,14 @@ _mineCivLocationsD = [ mineCivD1,  mineCivD2,  mineCivD3,  mineCivD4,  mineCivD5
 mineCivLocation = selectRandom [_mineCivLocationsA, _mineCivLocationsB, _mineCivLocationsC, _mineCivLocationsD];
 mineCivCount = count units mineCivilians;
 mineCivArray = units mineCivilians;
-for [{_i = 0}, {_i < mineCivCount}, {_i = _i + 1}] do
 {
-	(mineCivArray select _i) setPos (position (mineCivLocation select _i));
-	(mineCivArray select _i) setDir (getDir (mineCivLocation select _i));
-};
+	_x setPos (position (mineCivLocation select _forEachIndex));
+	//diag_log format ["Mine unit number %1 location: %2, %3 It should be: %4, %5", _forEachIndex, position _x select 0, position _x select 1, (position (mineCivLocation select _forEachIndex)) select 0, (position (mineCivLocation select _forEachIndex)) select 1];
+	_x setDir (getDir (mineCivLocation select _forEachIndex));
+	//diag_log format ["Mine unit number %1 rotation: %2 It should be: %3", _forEachIndex, getDir _x, (getDir (mineCivLocation select _forEachIndex))];
+	[_x ,true] remoteExec["ace_captives_fnc_setHandcuffed", _x];
+	//diag_log format ["Handcuff status of unit %1: %2 ", _forEachIndex, captive _x];
+} forEach mineCivArray;
 {
 	{
 		hideObjectGlobal _x;
@@ -169,11 +172,14 @@ _commsCivLocationsC = [ commsCivC1,  commsCivC2,  commsCivC3,  commsCivC4,  comm
 commsCivLocation = selectRandom [_commsCivLocationsA, _commsCivLocationsB, _commsCivLocationsC];
 commsCivCount = count units commsCivilians;
 commsCivArray = units commsCivilians;
-for [{_i = 0}, {_i < commsCivCount}, {_i = _i + 1}] do
 {
-	(commsCivArray select _i) setPos (position (commsCivLocation select _i));
-	(commsCivArray select _i) setDir (getDir (commsCivLocation select _i));
-};
+	_x setPos (position (commsCivLocation select _forEachIndex));
+	//diag_log format ["Comms unit number %1 location: %2, %3 It should be: %4, %5", _forEachIndex, position _x select 0, position _x select 1, (position (commsCivLocation select _forEachIndex)) select 0, (position (commsCivLocation select _forEachIndex)) select 1];
+	_x setDir (getDir (commsCivLocation select _forEachIndex));
+	//diag_log format ["Comms unit number %1 rotation: %2 It should be: %3", _forEachIndex, getDir _x, (getDir (commsCivLocation select _forEachIndex))];
+	[_x ,true] remoteExec["ace_captives_fnc_setHandcuffed", _x];
+	//diag_log format ["Handcuff status of unit %1: %2 ", _forEachIndex, captive _x];
+} forEach commsCivArray;
 {
 	{
 		hideObjectGlobal _x;
@@ -190,15 +196,19 @@ _factoryCivLocationsC = [ factoryCivC1,  factoryCivC2,  factoryCivC3,  factoryCi
 factoryCivLocation = selectRandom [_factoryCivLocationsA, _factoryCivLocationsB, _factoryCivLocationsC];
 factoryCivCount = count units factoryCivilians;
 factoryCivArray = units factoryCivilians;
-for [{_i = 0}, {_i < factoryCivCount}, {_i = _i + 1}] do
 {
-	(factoryCivArray select _i) setPos (position (factoryCivLocation select _i));
-	(factoryCivArray select _i) setDir (getDir (factoryCivLocation select _i));
-};
+	_x setPos (position (factoryCivLocation select _forEachIndex));
+	//diag_log format ["Factory unit number %1 location: %2, %3 It should be: %4, %5", _forEachIndex, position _x select 0, position _x select 1, (position (factoryCivLocation select _forEachIndex)) select 0, (position (factoryCivLocation select _forEachIndex)) select 1];
+	_x setDir (getDir (factoryCivLocation select _forEachIndex));
+	//diag_log format ["Factory unit number %1 rotation: %2 It should be: %3", _forEachIndex, getDir _x, (getDir (factoryCivLocation select _forEachIndex))];
+	[_x ,true] remoteExec["ace_captives_fnc_setHandcuffed", _x];
+	//diag_log format ["Handcuff status of unit %1: %2 ", _forEachIndex, captive _x];
+} forEach factoryCivArray;
 {
 	{
 		hideObjectGlobal _x;
 	} forEach _x;
+	
 } forEach [_factoryCivLocationsA, _factoryCivLocationsB, _factoryCivLocationsC];
 "factoryCivMarker" setMarkerPos [position (factoryCivArray select 0) select 0, position (factoryCivArray select 0) select 1];
 "factoryCivMarker" setMarkerAlpha 0;
@@ -239,6 +249,9 @@ _descUpdate = "UPDATE: A civilian has managed to contact 911 on their cellphone,
 [factoryBombs, "bombsFactory", factoryBombCount, 300] remoteExec ["MLY_fnc_detonateBombs", 2];
 [commsBombs, "bombsComms", commsBombCount, 300] remoteExec ["MLY_fnc_detonateBombs", 2];
 [mineBombs, "bombsMine", mineBombCount, 300] remoteExec ["MLY_fnc_detonateBombs", 2];
-[factoryCivilians, 100] remoteExec ["MLY_fnc_executeCivilians", (owner (units factoryCivilians select 0))];
-[mineCivilians, 100] remoteExec ["MLY_fnc_executeCivilians", (owner (units mineCivilians select 0))];
-[commsCivilians, 100] remoteExec ["MLY_fnc_executeCivilians", (owner (units commsCivilians select 0))];
+[factoryCivilians, 300] remoteExec ["MLY_fnc_executeCivilians", (owner (units factoryCivilians select 0))];
+[mineCivilians, 300] remoteExec ["MLY_fnc_executeCivilians", (owner (units mineCivilians select 0))];
+[commsCivilians, 300] remoteExec ["MLY_fnc_executeCivilians", (owner (units commsCivilians select 0))];
+
+//handcuff informant
+[informant,true] remoteExec["ace_captives_fnc_setHandcuffed", informant];

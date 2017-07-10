@@ -1,12 +1,12 @@
 //-------------------- Mission Information
 
 author = "The Ghost of O'Mally";					// Author name visible on loading screen
-briefingName = "Swatting Flies 2: Duterte's Devils v0.91";				// Name visible in mission select screen
+briefingName = "Swatting Flies 2: Duterte's Devils v1.0";				// Name visible in mission select screen
 overviewText = "ISIS attempts a series of hostage situations in the Phillipines";				// Description visible in mission select screen
 //overviewPicture = "";			// Image visible in mission select screen. Leave commented, still doesn't work properly.
 onLoadName = "SF 2: Duterte's Devils";				// Name visible on loading screen
 onLoadMission = "SWAT moves to defuse a series of hostage and bomb situations.";				// Description visible on loading screen
-//loadScreen = "media\loadscreen.paa"; // Image visible on loading screen
+loadScreen = "media\loadscreen.paa"; // Image visible on loading screen
 
 class Header
 {

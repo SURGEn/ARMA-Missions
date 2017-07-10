@@ -39,7 +39,7 @@ switch (toLower (_this select 0)) do {
 			_task = (deadmanSwitch select 4);
 			_descUpdate = "UPDATE: The informant revealed to us that there is a terrorist at this location with a deadman switch linked to the explosives which will activate their backup short fuse timer, lowering the time until detonation significantly. He is wearing an urban uniform, do not engage him until you've disarmed all explosives if possible.";
 			[_task, [_descUpdate, ((_task call BIS_fnc_taskDescription) select 1), ((_task call BIS_fnc_taskDescription) select 2)]] call BIS_fnc_taskSetDescription; 
-			"The informant has been rescued! We've recieved vital intel, check the task descriptions for more details." remoteExec ["hint"]; 
+			"The informant has been rescued! We've recieved vital intel, be sure to check your task descriptions for more details." remoteExec ["hint"]; 
 		} else {
 			["rescueInformant", "FAILED", true] call BIS_fnc_taskSetState;
 			"The informant has died! We'll just need to find the bombs and civilians on our own. Be ready for anything." remoteExec ["hint"]; 
