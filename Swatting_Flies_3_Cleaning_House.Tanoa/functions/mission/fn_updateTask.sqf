@@ -41,6 +41,14 @@ switch (toLower (_this select 0)) do {
 		deleteVehicle finances;
 	};
 	
+	case "accountant_finished": {
+		objectives = ("dealWithAccountant" call BIS_fnc_taskChildren);
+		objectivesFailed = ({_x call BIS_fnc_taskState isEqualTo "FAILED"} count objectives);
+		if(objectivesFailed > 1) 
+		then {["dealWithAccountant", "FAILED", true] call BIS_fnc_taskSetState;} 
+		else {["dealWithAccountant", "SUCCEEDED", true] call BIS_fnc_taskSetState;};
+	};
+	
 	case "bodyguard_dead": {
 		removeFromRemainsCollector [bodyguard];
 		["killBodyguard", "SUCCEEDED", true] call BIS_fnc_taskSetState;
@@ -55,6 +63,14 @@ switch (toLower (_this select 0)) do {
 		deleteVehicle testimony;
 	};
 	
+	case "bodyguard_finished": {
+		objectives = ("dealWithBodyguard" call BIS_fnc_taskChildren);
+		objectivesFailed = ({_x call BIS_fnc_taskState isEqualTo "FAILED"} count objectives);
+		if(objectivesFailed > 1) 
+		then {["dealWithBodyguard", "FAILED", true] call BIS_fnc_taskSetState;} 
+		else {["dealWithBodyguard", "SUCCEEDED", true] call BIS_fnc_taskSetState;};
+	};
+	
 	case "photographer_dead": {
 		removeFromRemainsCollector [photographer];
 		["killPhotographer", "SUCCEEDED", true] call BIS_fnc_taskSetState;
@@ -67,5 +83,13 @@ switch (toLower (_this select 0)) do {
 	case "photos_taken": {
 		["evidencePhotographer", "SUCCEEDED", true] call BIS_fnc_taskSetState;
 		deleteVehicle photos;
+	};
+	
+	case "photographer_finished": {
+		objectives = ("dealWithPhotographer" call BIS_fnc_taskChildren);
+		objectivesFailed = ({_x call BIS_fnc_taskState isEqualTo "FAILED"} count objectives);
+		if(objectivesFailed > 1) 
+		then {["dealWithPhotographer", "FAILED", true] call BIS_fnc_taskSetState;} 
+		else {["dealWithPhotographer", "SUCCEEDED", true] call BIS_fnc_taskSetState;};
 	};
 };
