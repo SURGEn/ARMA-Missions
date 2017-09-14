@@ -22,5 +22,50 @@ switch (toLower (_this select 0)) do {
 		[] remoteExec ["clearRadio", 0];
 		[] spawn {sleep 3; ["heliShotDown", true, 10, false, false] remoteExec ["BIS_fnc_endMission", 0];};
 	};
+	
+	case "found_drugs": {
+		["aquireDrugs", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+	};
+	
+	case "accountant_dead": {
+		removeFromRemainsCollector [accountant];
+		["killAccountant", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+	};
+	
+	case "planted_accountant": {
+		["plantDrugsAccountant", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+	};
+	
+	case "finances_taken": {
+		["evidenceAccountant", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+		deleteVehicle finances;
+	};
+	
+	case "bodyguard_dead": {
+		removeFromRemainsCollector [bodyguard];
+		["killBodyguard", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+	};
+	
+	case "planted_bodyguard": {
+		["plantDrugsBodyguard", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+	};
+	
+	case "testimony_taken": {
+		["evidenceBodyguard", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+		deleteVehicle testimony;
+	};
+	
+	case "photographer_dead": {
+		removeFromRemainsCollector [photographer];
+		["killPhotographer", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+	};
+	
+	case "planted_photographer": {
+		["plantDrugsPhotographer", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+	};
+	
+	case "photos_taken": {
+		["evidencePhotographer", "SUCCEEDED", true] call BIS_fnc_taskSetState;
+		deleteVehicle photos;
+	};
 };
-
