@@ -33,7 +33,7 @@ class loadouts
 		weapons[] = {"CUP_arifle_M4A1_black", "hlc_pistol_P229R_357Stainless"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"CUP_30Rnd_556x45_Stanag", "CUP_acc_Flashlight", "CUP_optic_HoloBlack"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
-		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_VTAC"}; // Handgun items. Includes magazine you want loaded initially.
+		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_Siglite"}; // Handgun items. Includes magazine you want loaded initially.
 		
 		uniformClass = "RM_SWAT_Uniform_01";
 		headgearClass = "RM_SWAT_MilCap_Black";
@@ -54,7 +54,7 @@ class loadouts
 		weapons[] = {"hlc_smg_mp5a4" , "hlc_pistol_P229R_357Stainless"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"hlc_30Rnd_9x19_B_MP5", "CUP_acc_Flashlight", "optic_Aco_smg"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
-		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_VTAC"}; // Handgun items. Includes magazine you want loaded initially.
+		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_Siglite"}; // Handgun items. Includes magazine you want loaded initially.
 		
 		uniformClass = "RM_SWAT_Uniform_01";
 		headgearClass = "RM_SWAT_Helmet_01";
@@ -68,6 +68,27 @@ class loadouts
 		backpackItems[] = {{"ACE_morphine", 20}, {"ACE_epinephrine", 20}, {"ACE_elasticBandage", 60}, {"ACE_tourniquet", 15}, {"ACE_bloodIV", 10}, {"ACE_Defibrillator", 1}, {"ACE_surgicalKit", 1}, {"ACE_personalAidKit", 2}}; // Items to place in backpack. Includes weapon magazines
 	};
 	
+	class B_soldier_UAV_F
+	{
+		displayName = "SWAT UAV Operator"; // Currently unused, basically just a human-readable name for the loadout
+		
+		weapons[] = {"hlc_smg_mp5a4" , "hlc_pistol_P229R_357Stainless"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
+		primaryWeaponItems[] = {"hlc_30Rnd_9x19_B_MP5", "CUP_acc_Flashlight", "optic_Aco_smg"}; // Primary weapon items. Includes magazine you want loaded initially
+		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
+		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_Siglite"}; // Handgun items. Includes magazine you want loaded initially.
+		
+		uniformClass = "RM_SWAT_Uniform_01";
+		headgearClass = "RM_SWAT_Helmet_01";
+		facewearClass = "CUP_RUS_Balaclava_blk";
+		vestClass = "RM_SWAT_Vest_01";
+		backpackClass = "";
+		
+		linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "B_UavTerminal"}; // Linked items for the unit, use for map, compass, radio, watch, gps, and NVGs
+		uniformItems[] = {{"ACE_morphine", 3}, {"ACE_epinephrine", 3}, {"ItemcTabHCam", 1}, {"ACE_quikclot", 10}, {"hlc_10Rnd_357SIG_B_P229", 1}, {"hlc_30Rnd_9x19_B_MP5", 1}}; // Items to place in uniform. Includes weapon magazines
+		vestItems[] = {{"SmokeShell", 2}, {"ACE_M84", 2}, {"ACE_morphine", 8}, {"ACE_epinephrine", 8}, {"ACE_quikclot", 10}, {"ACE_tourniquet", 5}, {"ACE_CableTie", 3}, {"hlc_30Rnd_9x19_B_MP5", 3}, {"hlc_30Rnd_9x19_GD_MP5", 3}}; // Items to place in vest. Includes weapon magazines
+		backpackItems[] = {}; // Items to place in backpack. Includes weapon magazines
+	};
+	
 	class B_Soldier_TL_F
 	{
 		displayName = "SWAT Team Leader (Red)"; // Currently unused, basically just a human-readable name for the loadout
@@ -75,7 +96,7 @@ class loadouts
 		weapons[] = {"CUP_arifle_M4A1_black", "hlc_pistol_P229R_357Stainless"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"CUP_30Rnd_556x45_Stanag", "CUP_acc_Flashlight", "CUP_optic_HoloBlack"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
-		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_VTAC"}; // Handgun items. Includes magazine you want loaded initially.
+		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_Siglite"}; // Handgun items. Includes magazine you want loaded initially.
 		
 		uniformClass = "RM_SWAT_Uniform_01";
 		headgearClass = "RM_SWAT_Helmet_01";
@@ -96,7 +117,7 @@ class loadouts
 		weapons[] = {"CUP_arifle_M4A1_black", "hlc_pistol_P229R_357Stainless"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"CUP_30Rnd_556x45_Stanag", "CUP_acc_Flashlight", "CUP_optic_HoloBlack"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
-		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_VTAC"}; // Handgun items. Includes magazine you want loaded initially.
+		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_Siglite"}; // Handgun items. Includes magazine you want loaded initially.
 		
 		uniformClass = "RM_SWAT_Uniform_01";
 		headgearClass = "RM_SWAT_Helmet_01";
@@ -117,7 +138,7 @@ class loadouts
 		weapons[] = {"CUP_arifle_M4A1_black", "hlc_pistol_P229R_357Stainless"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"CUP_30Rnd_556x45_Stanag", "CUP_acc_Flashlight", "CUP_optic_HoloBlack"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
-		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_VTAC"}; // Handgun items. Includes magazine you want loaded initially.
+		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_Siglite"}; // Handgun items. Includes magazine you want loaded initially.
 		
 		uniformClass = "RM_SWAT_Uniform_01";
 		headgearClass = "RM_SWAT_Helmet_01";
@@ -138,7 +159,7 @@ class loadouts
 		weapons[] = {"CUP_arifle_M4A1_black","hlc_pistol_P229R_357Stainless"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"CUP_30Rnd_556x45_Stanag", "CUP_acc_Flashlight", "CUP_optic_HoloBlack"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
-		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_VTAC"}; // Handgun items. Includes magazine you want loaded initially.
+		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_Siglite"}; // Handgun items. Includes magazine you want loaded initially.
 		
 		uniformClass = "RM_SWAT_Uniform_01";
 		headgearClass = "RM_SWAT_Helmet_01";
@@ -159,7 +180,7 @@ class loadouts
 		weapons[] = {"hlc_smg_mp5a4", "hlc_pistol_P229R_357Stainless"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"hlc_30Rnd_9x19_B_MP5", "CUP_acc_Flashlight", "optic_Aco_smg"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
-		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_VTAC"}; // Handgun items. Includes magazine you want loaded initially.
+		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_Siglite"}; // Handgun items. Includes magazine you want loaded initially.
 		
 		uniformClass = "RM_SWAT_Uniform_01";
 		headgearClass = "RM_SWAT_Helmet_01";
@@ -180,7 +201,7 @@ class loadouts
 		weapons[] = {"hlc_smg_mp5a4", "hlc_pistol_P229R_357Stainless"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"hlc_30Rnd_9x19_B_MP5", "CUP_acc_Flashlight", "optic_Aco_smg"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
-		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_VTAC"}; // Handgun items. Includes magazine you want loaded initially.
+		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_Siglite"}; // Handgun items. Includes magazine you want loaded initially.
 		
 		uniformClass = "RM_SWAT_Uniform_01";
 		headgearClass = "RM_SWAT_Helmet_01";
@@ -201,7 +222,7 @@ class loadouts
 		weapons[] = {"hlc_smg_mp5a4", "hlc_pistol_P229R_357Stainless"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"hlc_30Rnd_9x19_B_MP5", "CUP_acc_Flashlight", "optic_Aco_smg"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
-		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_VTAC"}; // Handgun items. Includes magazine you want loaded initially.
+		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_Siglite"}; // Handgun items. Includes magazine you want loaded initially.
 		
 		uniformClass = "RM_SWAT_Uniform_01";
 		headgearClass = "RM_SWAT_Helmet_01";
@@ -222,7 +243,7 @@ class loadouts
 		weapons[] = {"hlc_smg_mp5a4", "hlc_pistol_P229R_357Stainless"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"hlc_30Rnd_9x19_B_MP5", "CUP_acc_Flashlight", "optic_Aco_smg"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
-		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_VTAC"}; // Handgun items. Includes magazine you want loaded initially.
+		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_Siglite"}; // Handgun items. Includes magazine you want loaded initially.
 		
 		uniformClass = "RM_SWAT_Uniform_01";
 		headgearClass = "RM_SWAT_Helmet_01";
@@ -285,7 +306,7 @@ class loadouts
 		weapons[] = {"hlc_rifle_saiga12k" , "hlc_pistol_P229R_357Stainless"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"hlc_10rnd_12g_slug_S12"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
-		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_VTAC"}; // Handgun items. Includes magazine you want loaded initially.
+		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_Siglite"}; // Handgun items. Includes magazine you want loaded initially.
 		
 		uniformClass = "RM_SWAT_Uniform_01";
 		headgearClass = "RM_SWAT_Helmet_01";
@@ -306,7 +327,7 @@ class loadouts
 		weapons[] = {"hlc_rifle_saiga12k" , "hlc_pistol_P229R_357Stainless"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"hlc_10rnd_12g_slug_S12"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
-		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_VTAC"}; // Handgun items. Includes magazine you want loaded initially.
+		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_Siglite"}; // Handgun items. Includes magazine you want loaded initially.
 		
 		uniformClass = "RM_SWAT_Uniform_01";
 		headgearClass = "RM_SWAT_Helmet_01";
@@ -327,7 +348,7 @@ class loadouts
 		weapons[] = {"hlc_smg_mp5a4" , "hlc_pistol_P229R_357Stainless"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"hlc_30Rnd_9x19_B_MP5"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
-		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_VTAC"}; // Handgun items. Includes magazine you want loaded initially.
+		handgunItems[] = {"hlc_10Rnd_357SIG_B_P229", "acc_flashlight_pistol", "HLC_optic228_Siglite"}; // Handgun items. Includes magazine you want loaded initially.
 		
 		uniformClass = "RM_SWAT_Uniform_01";
 		headgearClass = "H_PilotHelmetHeli_B";

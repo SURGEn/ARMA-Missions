@@ -41,7 +41,7 @@ class cfgFunctions
 		// The functions below are intended to be called to change mission states.
 		// Edit the function files located in functions\mission\ to work with your mission.
 		class mission {
-			// Don't change any of these classes
+			// Don't change any of these classes5555555555555555
 			class endMission {};
 			class updateTask {};
 		};

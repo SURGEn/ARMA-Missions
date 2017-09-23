@@ -38,7 +38,6 @@ if (isServer) then {
 		_settingsSWEast = _settingsSW;
 		_settingsSWGuer = _settingsSW;
 	};
-	
 	_settingsLR = ["50","55","60","65","70","75","80","85","90"];
 	
 	TFAR_defaultFrequencies_sr_west = _settingsSWWest;

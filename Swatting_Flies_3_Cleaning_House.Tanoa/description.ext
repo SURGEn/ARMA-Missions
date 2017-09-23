@@ -1,18 +1,18 @@
 //-------------------- Mission Information
 
-author = "";					// Author name visible on loading screen
-briefingName = "";				// Name visible in mission select screen
-overviewText = "";				// Description visible in mission select screen
+author = "The Ghost of Officer O'Mally";					// Author name visible on loading screen
+briefingName = "COOP28+1_Swatting_Flies_3_Cleaning_House";				// Name visible in mission select screen
+overviewText = "A SWAT team silences dangerous individuals for Duterte.";				// Description visible in mission select screen
 //overviewPicture = "";			// Image visible in mission select screen. Leave commented, still doesn't work properly.
-onLoadName = "";				// Name visible on loading screen
-onLoadMission = "";				// Description visible on loading screen
-//loadScreen = "media\loadscreen.paa"; // Image visible on loading screen
+onLoadName = "Cleaning House";				// Name visible on loading screen
+onLoadMission = "Time for some wetwork.";				// Description visible on loading screen
+loadScreen = "media\loadscreen.paa"; // Image visible on loading screen
 
 class Header
 {
 	gameType = COOP;			// https://community.bistudio.com/wiki/Multiplayer_Game_Types
 	minPlayers = 1;				// Minimum amount of players needed for the mission
-	maxPlayers = 16;			// Maximum amount of players the mission supports
+	maxPlayers = 29;			// Maximum amount of players the mission supports
 };
 
 //-------------------- Defines
@@ -58,15 +58,15 @@ saving = 0;						// Disable saving for multiplayer missions
 // https://community.bistudio.com/wiki/Arma_3_Respawn
 
 respawn = 3;					// 3 is BASE respawn
-respawnDelay = 300;				// Respawn delay in seconds
-respawnVehicleDelay = 1800;		// Vehicle respawn delay in seconds
+respawnDelay = 120;				// Respawn delay in seconds
+respawnVehicleDelay = 1200;		// Vehicle respawn delay in seconds
 respawnDialog = 0;				// Disables showing scoreboard when respawning
 respawnOnStart = 0;				// Respawns players at the start of the mission. Leave this off for most cases.
 respawnButton = 1;				// Enable the respawn button for players
 
 //-------------------- Respawn Templates
 
-respawnTemplates[] = {"MenuPosition", "Spectator", "Wave"};				// Templates used for player respawning, applies to all sides
+respawnTemplates[] = {"Counter"};				// Templates used for player respawning, applies to all sides
 //respawnTemplatesWest[] = {"MenuPosition", "Spectator"};		// Templates used for player respawning, applies to BLUFOR only
 //respawnTemplatesEast[] = {"MenuPosition", "Spectator"};		// Templates used for player respawning, applies to OPFOR only
 //respawnTemplatesGuer[] = {"MenuPosition", "Spectator"};		// Templates used for player respawning, applies to Independent only
