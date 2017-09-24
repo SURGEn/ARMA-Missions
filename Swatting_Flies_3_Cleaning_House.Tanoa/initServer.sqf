@@ -39,7 +39,6 @@ _blacklistedMissionObjects = [];
 
 // Add any mission specific code after this point
 [] call SXP_fnc_setupTFAR;
-shotDown = false;
 _accountantLocations = [accountant1, accountant2, accountant3]; 
 _financeLocations = [finances1, finances2, finances3]; 
 accountantNum = floor random 3;

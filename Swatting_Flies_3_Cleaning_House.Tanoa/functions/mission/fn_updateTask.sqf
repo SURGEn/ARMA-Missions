@@ -102,10 +102,12 @@ switch (toLower (_this select 0)) do {
 		_pilot1 moveInDriver exfilHelo;
 		_pilot1 disableAI "AUTOTARGET";
 		_pilot1 disableAI "TARGET";
+		[_pilot1] remoteExec ["SXP_fnc_addUnitToZeus", 2];
 		_pilot2 = _grp createUnit ["CUP_B_US_Pilot_Light", position exfilHelo, [], 0, ""];
 		_pilot2 moveInGunner exfilHelo;
 		_pilot2 disableAI "AUTOTARGET";
 		_pilot2 disableAI "TARGET";
+		[_pilot2] remoteExec ["SXP_fnc_addUnitToZeus", 2];
 		_grp setBehaviour "CARELESS";
 		[gunner exfilHelo, "TOC this is your exfil. We are standing by at the marked location. We'll liftoff once all your boys are loaded in."] remoteExec ["sideChat", 0];
 		exfilHelo setVehicleAmmo 0;

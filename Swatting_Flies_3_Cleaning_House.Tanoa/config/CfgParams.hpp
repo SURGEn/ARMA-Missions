@@ -55,6 +55,16 @@ class params
 		texts[] = {"Disabled", "50/50", "Enabled"};
 		default = 2;
 	};
+	
+	class ace_medical_enableFor
+	{
+		title = "ACE3 - Enable for Players/AI";
+		ACE_setting = 1;
+		values[] = {0,1};
+		texts[] = {"Players", "Players and AI"};
+		default = 1;
+	};
+
 	class header_mission_settings
 	{
 		title = "===== Mission Settings =====";

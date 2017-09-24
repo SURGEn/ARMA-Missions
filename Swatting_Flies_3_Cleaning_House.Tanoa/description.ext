@@ -1,7 +1,7 @@
 //-------------------- Mission Information
 
 author = "The Ghost of Officer O'Mally";					// Author name visible on loading screen
-briefingName = "COOP28+1 Swatting Flies 3: Cleaning House V1.2";				// Name visible in mission select screen
+briefingName = "COOP28+1 Swatting Flies 3: Cleaning House V1.24";				// Name visible in mission select screen
 overviewText = "A SWAT team silences dangerous individuals for Duterte.";				// Description visible in mission select screen
 //overviewPicture = "";			// Image visible in mission select screen. Leave commented, still doesn't work properly.
 onLoadName = "Cleaning House";				// Name visible on loading screen
