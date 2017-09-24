@@ -20,3 +20,4 @@ player createDiaryRecord ["sxp_template", ["Version",
 ]];
 
 // Add any mission-specific code after this point
+player addEventHandler["Killed", {if(shotDown) then {titleText ["TO BE CONTINUED", "BLACK", -1, true, true];};}];

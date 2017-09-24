@@ -53,8 +53,8 @@ accountantNum = floor random 3;
 	then {finances = _x;}
 	else {deleteVehicle _x;};
 } forEach _financeLocations;
-[finances, "media\evidence\evidencefinances.jpg", "Finance records of a foreign bank account belonging to Duterte with many suspicious transactions."] call bis_fnc_initInspectable;
-finances addAction ["Take Evidence", {["finances_taken"] remoteExec ["SXP_fnc_updateTask", 2]}, nil, 1.5, true, true, "", "true", 2, false, ""];
+//[finances, "media\evidence\evidencefinances.jpg", "Finance records of a foreign bank account belonging to Duterte with many suspicious transactions."] call bis_fnc_initInspectable;
+//finances addAction ["Take Evidence", {["finances_taken"] remoteExec ["SXP_fnc_updateTask", 2]}, nil, 1.5, true, true, "", "true", 2, false, ""];
 
 _bodyguardLocations = [bodyguard1, bodyguard2, bodyguard3]; 
 _testimonyLocations = [testimony1, testimony2, testimony3]; 
@@ -69,8 +69,8 @@ bodyguardNum = floor random 3;
 	then {testimony = _x;}
 	else {deleteVehicle _x;};
 } forEach _testimonyLocations;
-[testimony, "media\evidence\evidencetranscript.jpg", "Testimony implicating Duterte plans to backstab NATO for CSAT."] call bis_fnc_initInspectable;
-testimony addAction ["Take Evidence", {["testimony_taken"] remoteExec ["SXP_fnc_updateTask", 2]}, nil, 1.5, true, true, "", "true", 2, false, ""];
+//[testimony, "media\evidence\evidencetranscript.jpg", "Testimony implicating Duterte plans to backstab NATO for CSAT."] call bis_fnc_initInspectable;
+//testimony addAction ["Take Evidence", {["testimony_taken"] remoteExec ["SXP_fnc_updateTask", 2]}, nil, 1.5, true, true, "", "true", 2, false, ""];
 
 _photographerLocations = [photographer1, photographer2, photographer3]; 
 _photoLocations = [photos1, photos2, photos3]; 
@@ -85,5 +85,5 @@ photographerNum = floor random 3;
 	then {photos = _x;}
 	else {deleteVehicle _x;};
 } forEach _photoLocations;
-[photos, "media\evidence\evidencephotos.jpg", "Photos showing a man who looks like Duterte overseeing a firing squad."] call bis_fnc_initInspectable;
-photos addAction ["Take Evidence", {["photos_taken"] remoteExec ["SXP_fnc_updateTask", 2]}, nil, 1.5, true, true, "", "true", 2, false, ""];
+//[photos, "media\evidence\evidencephotos.jpg", "Photos showing a man who looks like Duterte overseeing a firing squad."] call bis_fnc_initInspectable;
+//photos addAction ["Take Evidence", {["photos_taken"] remoteExec ["SXP_fnc_updateTask", 2]}, nil, 1.5, true, true, "", "true", 2, false, ""];
