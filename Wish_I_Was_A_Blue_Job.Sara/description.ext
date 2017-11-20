@@ -43,7 +43,7 @@ class Header
 
 // The following variables have no relevance to the game if not used with the rest of the template scripts
 // Edit the values below to change template settings
-XPT_customLoadouts = 0;			// Set to 1 to enable loading custom loadouts for player units
+XPT_customLoadouts = 1;			// Set to 1 to enable loading custom loadouts for player units
 XPT_customVehicleCargo = 0;		// Set to 1 to enable custom vehicle inventories - Currently unused
 XPT_stageDefault = "stage1";	// Set this to whatever stage you want as the default.
 
