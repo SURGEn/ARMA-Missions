@@ -15,3 +15,4 @@ _this call XPT_fnc_initPlayerLocal; // DO NOT CHANGE THIS LINE
 		_x setObjectTexture [0, "media\camo\shrugs2small.paa"]; 
 	} forEach _allPlayers;
 };*/ // potentially unnecesary
+["Init", []] call MLY_fnc_setupTFAR;

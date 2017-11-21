@@ -80,10 +80,41 @@ class loadouts
 		vestClass = "CUP_V_O_Ins_Carrier_Rig_MG";
 		backpackClass = "TFAR_rt1523g";
 		
-		linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "ItemMicroDAGR"}; // Linked items for the unit, use for map, compass, radio, watch, gps, and NVGs
+		linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "ItemcTab"}; // Linked items for the unit, use for map, compass, radio, watch, gps, and NVGs
 		uniformItems[] = {{"ACE_fieldDressing", 15}, {"ACE_epinephrine", 3},{"ACE_morphine", 5}}; // Items to place in uniform. Includes weapon magazines
 		vestItems[] = {{"CUP_HandGrenade_M67", 1}, {"SmokeShell", 2}, {"SmokeShellBlue", 1}, {"SmokeShellRed", 1}, {"hlc_20Rnd_762x51_B_fal", 5}, {"CUP_7Rnd_45ACP_1911", 2}}; // Items to place in vest. Includes weapon magazines
 		backpackItems[] = {}; // Items to place in backpack. Includes weapon magazines
+		
+		basicMedUniform[] = {}; // Items to be placed in the uniform only when basic medical is being used
+		basicMedVest[] = {}; // Items to be placed in the vest only when basic medical is being used
+		basicMedBackpack[] = {}; // Items to be placed in the backpack only when basic medical is being used
+		
+		advMedUniform[] = {}; // Items to be placed in the uniform only when advanced medical is being used
+		advMedVest[] = {}; // Items to be placed in the vest only when advanced medical is being used
+		advMedBackpack[] = {}; // Items to be placed in the backpack only when advanced medical is being used
+		
+	};
+	
+	
+	class I_pilot_F
+	{
+		displayName = "Example Loadout"; // Currently unused, basically just a human-readable name for the loadout
+		
+		weapons[] = {"hlc_rifle_SLR", "CUP_hgun_Colt1911", "Binocular"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
+		primaryWeaponItems[] = {"hlc_20Rnd_762x51_B_fal"}; // Primary weapon items. Includes magazine you want loaded initially
+		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
+		handgunItems[] = {"CUP_7Rnd_45ACP_1911"}; // Handgun items. Includes magazine you want loaded initially.
+		
+		uniformClass = "CUP_U_O_TK_Green";
+		headgearClass = "CUP_H_TK_Beret";
+		facewearClass = "";
+		vestClass = "CUP_V_O_Ins_Carrier_Rig_MG";
+		backpackClass = "TFAR_rt1523g_sage";
+		
+		linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "ItemMicroDAGR"}; // Linked items for the unit, use for map, compass, radio, watch, gps, and NVGs
+		uniformItems[] = {{"ACE_fieldDressing", 15}, {"ACE_epinephrine", 3},{"ACE_morphine", 5}}; // Items to place in uniform. Includes weapon magazines
+		vestItems[] = {{"CUP_HandGrenade_M67", 1}, {"SmokeShell", 2}, {"SmokeShellBlue", 1}, {"SmokeShellRed", 1}, {"hlc_20Rnd_762x51_B_fal", 5}, {"CUP_7Rnd_45ACP_1911", 2}}; // Items to place in vest. Includes weapon magazines
+		backpackItems[] = {{"ToolKit", 1}}; // Items to place in backpack. Includes weapon magazines
 		
 		basicMedUniform[] = {}; // Items to be placed in the uniform only when basic medical is being used
 		basicMedVest[] = {}; // Items to be placed in the vest only when basic medical is being used

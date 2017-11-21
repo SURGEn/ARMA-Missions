@@ -6,10 +6,11 @@
 // See the functions library wiki page for additional details
 
 
-/*class MLY // Function TAG, used for the first part of the function name
+class MLY // Function TAG, used for the first part of the function name
 {
 	class radios // Function category, defines the folder that the file is located in
 	{
-		class fuckTfar {preInit = 1;};
+		class setupTFAR {};
+		class setupMarkers {};
 	};
-};*/
+};

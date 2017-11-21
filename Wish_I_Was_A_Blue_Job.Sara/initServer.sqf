@@ -12,8 +12,13 @@ XPT_blacklistedMissionObjects = [];
 [] execVM "scripts\tasks.sqf";
 
 // Add any mission specific code after this point
-_allPlayers = allPlayers - allCurators;
 
+
+_groups = [];
+{_groups pushBackUnique group _x} forEach playableUnits;
+[getMarkerPos "startMarker", _groups] call MLY_fnc_setupMarkers;
+
+_allPlayers = playableUnits - allCurators;
 {
 	_x setObjectTextureGlobal [0, "media\camo\shrugs2small.paa"]; 
 } forEach _allPlayers;
