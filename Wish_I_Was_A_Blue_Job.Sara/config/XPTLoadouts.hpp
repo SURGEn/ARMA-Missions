@@ -53,7 +53,7 @@ class loadouts
 		linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "ItemMicroDAGR"}; // Linked items for the unit, use for map, compass, radio, watch, gps, and NVGs
 		uniformItems[] = {{"ACE_fieldDressing", 15}, {"ACE_epinephrine", 3},{"ACE_morphine", 5}}; // Items to place in uniform. Includes weapon magazines
 		vestItems[] = {{"CUP_HandGrenade_M67", 1}, {"SmokeShell", 2}, {"SmokeShellBlue", 1}, {"SmokeShellRed", 1}, {"hlc_20Rnd_762x51_B_fal", 5}, {"CUP_7Rnd_45ACP_1911", 2}}; // Items to place in vest. Includes weapon magazines
-		backpackItems[] = {}; // Items to place in backpack. Includes weapon magazines
+		backpackItems[] = {{"ACE_wirecutter", 1}}; // Items to place in backpack. Includes weapon magazines
 		
 		basicMedUniform[] = {}; // Items to be placed in the uniform only when basic medical is being used
 		basicMedVest[] = {}; // Items to be placed in the vest only when basic medical is being used

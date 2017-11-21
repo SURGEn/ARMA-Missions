@@ -10,9 +10,6 @@ _this call XPT_fnc_initPlayerLocal; // DO NOT CHANGE THIS LINE
 
 /*if(_jip) then 
 {
-	_allPlayers = allPlayers - allCurators;
-	{
-		_x setObjectTexture [0, "media\camo\shrugs2small.paa"]; 
-	} forEach _allPlayers;
+	_player setObjectTexture [0, "media\camo\shrugs2small.paa"]; 
 };*/ // potentially unnecesary
 ["Init", []] call MLY_fnc_setupTFAR;

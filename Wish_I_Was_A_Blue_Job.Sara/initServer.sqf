@@ -18,9 +18,9 @@ _groups = [];
 {_groups pushBackUnique group _x} forEach playableUnits;
 [getMarkerPos "startMarker", _groups] call MLY_fnc_setupMarkers;
 
-_allPlayers = playableUnits - allCurators;
+/*_allPlayers = playableUnits - allCurators;
 {
 	_x setObjectTextureGlobal [0, "media\camo\shrugs2small.paa"]; 
-} forEach _allPlayers;
+} forEach _allPlayers;*/
 jet setObjectTextureGlobal [0, "media\camo\Buzzard_1.jpg"]; 
 jet setObjectTextureGlobal [1, "media\camo\Buzzard_2.jpg"]; 
