@@ -24,3 +24,11 @@ _groups = [];
 } forEach _allPlayers;*/
 jet setObjectTextureGlobal [0, "media\camo\Buzzard_1.jpg"]; 
 jet setObjectTextureGlobal [1, "media\camo\Buzzard_2.jpg"]; 
+[box1, transport1] call ace_cargo_fnc_loadItem;
+[box2, transport2] call ace_cargo_fnc_loadItem;
+
+airstripVehicles = [jet, transport1, transport2, fuelTruck, ammoTruck, repairTruck];
+{
+	_x allowDamage false;
+	_x setVehicleLock "LOCKED";
+} forEach airstripVehicles;

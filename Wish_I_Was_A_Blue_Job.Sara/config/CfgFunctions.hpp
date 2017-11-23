@@ -13,4 +13,8 @@ class MLY // Function TAG, used for the first part of the function name
 		class setupTFAR {};
 		class setupMarkers {};
 	};
+	class mission // Function category, defines the folder that the file is located in
+	{
+		class updateTask {}; // Function class. Defines the file 
+	};
 };

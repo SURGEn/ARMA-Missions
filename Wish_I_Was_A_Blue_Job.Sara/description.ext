@@ -197,3 +197,20 @@ class CfgXPT
 
 //-------------------- ACE3 Settings
 #include "config\ACE_Settings.hpp"
+
+class CfgMusic
+{
+	tracks[]={};
+
+	class neverDie
+	{
+		name = "Rhodesians never Die";
+		sound[] = {"media\music\neverDie.ogg", db+0, 1.0};
+	};
+	
+	class blueJob
+	{
+		name = "Wish I was a Blue Job";
+		sound[] = {"media\music\blueJob.ogg", db+0, 1.0};
+	};
+};
