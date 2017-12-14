@@ -64,7 +64,7 @@ switch (toLower (_this select 0)) do
 	
 	case "invade_harare":
 	{
-		[zimbabweFlag,  "Raise Rhodesian Flag",  "",  "",  "_this distance _target < 5",  "_caller distance _target < 5",  {[(_this select 0), 0, false] call BIS_fnc_animateFlag}, {}, {["flag_lowered"] call MLY_fnc_updateTask}, {[(_this select 0), 1, false] call BIS_fnc_animateFlag}, [], 10, 1, true, false ] call BIS_fnc_holdActionAdd;
+		[zimbabweFlag,  "Raise Rhodesian Flag",  "",  "",  "_this distance _target < 5",  "_caller distance _target < 5",  {[(_this select 0), 0, false] call BIS_fnc_animateFlag}, {}, {["flag_lowered"] remoteExec ["MLY_fnc_updateTask", 2]}, {[(_this select 0), 1, false] call BIS_fnc_animateFlag}, [], 10, 1, true, false] remoteExec ["BIS_fnc_holdActionAdd", 0, true];
 		[[true, "zeus_unit"], ["raiseFlag"], ["Attack the parliamentary palace and raise the flag of Rhodesia upon it's roof.", "Raise the flag", "marker"], getMarkerPos "flagMarker", "ASSIGNED", 10, true, "target", true] call BIS_fnc_taskCreate;
 		
 	};

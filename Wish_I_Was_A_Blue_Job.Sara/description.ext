@@ -1,7 +1,7 @@
 //-------------------- Mission Information
 
 author = "The Ghost of O'Mally";					// Author name visible on loading screen
-briefingName = "Wish I Was A Blue Job V1.0";				// Name visible in mission select screen
+briefingName = "COOP55+1 Wish I Was A Blue Job V1.02";				// Name visible in mission select screen
 overviewText = "";				// Description visible in mission select screen
 //overviewPicture = "";			// Image visible in mission select screen. Leave commented, still doesn't work properly.
 onLoadName = "Wish I Was A Blue Job";				// Name visible on loading screen
