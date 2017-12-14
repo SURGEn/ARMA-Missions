@@ -19,11 +19,11 @@
 
 class briefings
 {
-	class assets	// Example assets briefing. Should include a list of all friendly vehicle assets available.
+	class radios	// Example situation briefing. Should include a bit of backstory to your mission.
 	{
 		category = "Diary";
-		entryName = "Assets";
-		entryText = "Example Assets List. REPLACE BEFORE RUNNING THE MISSION.<br/> - 1x Car<br/> - 1x Tank<br/> - 1x Boat<br/> - 1x Plane";
+		entryName = "Radios and Logistics";
+		entryText = "Radios for each element are preset according to the markers on the map.<br /> <br />PILOTS WILL NOT HAVE A PLANE UNTIL THE AIRFIELD IS SECURED.<br /> <br />Logistics pilots are responsible for dropping troops and supplies into the AO once they have secured their planes. Squads will need to be dropped long range radios in a supply drop in order to keep in contact with command, each transport plane will have a small supply drop already loaded in when they are secured.";
 		onStart = 1;
 		sides[] = {0,1,2,3};
 	};
@@ -31,7 +31,7 @@ class briefings
 	{
 		category = "Diary";
 		entryName = "Mission";
-		entryText = "Example Mission Briefing. REPLACE BEFORE RUNNING THE MISSION<br/>. We need to get the bad guy.";
+		entryText = "Our objectives are three fold in this mission: <br /> -Kill Robert Mugabe <br /> -Rescue Ian Smith, who never died as he is Rhodesian <br /> -Raise the Rhodesian Flag over the parliamentary palace in Harare (marked as Ortega on our maps) <br /> <br />Currently we are in the northern tip of the AO, and the majority of ZANLA stands between us and our goal. Specifically, ZANLA has concentrated muck of it's forces in the town of Corazol. We do not have the manpower or firepower to deal with the force there, so we will simply avoid them. The airstrip to the north of here is lightly defended, once we take out the small ZANLA base nearby and acquire transport, taking the airstrip should be easy. We will then use the aircraft there to fly troops over Corazol, paradropping in the area around Oretega. Once we rescue Ian Smith and kill Mugabe, we will begin the final push on Harare (marked incorrectly as Ortega on our maps).";
 		onStart = 1;
 		sides[] = {0,1,2,3};
 	};
@@ -39,8 +39,9 @@ class briefings
 	{
 		category = "Diary";
 		entryName = "Situation";
-		entryText = "Example Situation. REPLACE BEFORE RUNNING THE MISSION<br/>. The bad guy did a bad thing. We need to stop him!";
+		entryText = "The Zimbabwean Military (or ZANLA) have attempted a coup against Robert Mugabe. We will take advantage of the confusion caused by this coup to start our own, and liberate Rhodesia once and for all.";
 		onStart = 1;
 		sides[] = {0,1,2,3};
 	};
+	
 };

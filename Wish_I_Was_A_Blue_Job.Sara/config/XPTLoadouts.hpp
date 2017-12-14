@@ -9,7 +9,7 @@ class loadouts
 	{
 		displayName = "Example Loadout"; // Currently unused, basically just a human-readable name for the loadout
 		
-		weapons[] = {"hlc_rifle_SLR", "", "CUP_hgun_Colt1911", "Binocular"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
+		weapons[] = {"hlc_rifle_FAL5000", "", "CUP_hgun_Colt1911", "Binocular"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"optic_ACO", "acc_flashlight", "hlc_20Rnd_762x51_B_fal"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {"Titan_AP"}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
 		handgunItems[] = {"9Rnd_45ACP_Mag"}; // Handgun items. Includes magazine you want loaded initially.
@@ -39,7 +39,7 @@ class loadouts
 	{
 		displayName = "Example Loadout"; // Currently unused, basically just a human-readable name for the loadout
 		
-		weapons[] = {"hlc_rifle_SLR", "CUP_hgun_Colt1911", "Binocular"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
+		weapons[] = {"hlc_rifle_FAL5000", "CUP_hgun_Colt1911", "Binocular"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"hlc_20Rnd_762x51_B_fal"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
 		handgunItems[] = {"CUP_7Rnd_45ACP_1911"}; // Handgun items. Includes magazine you want loaded initially.
@@ -48,7 +48,7 @@ class loadouts
 		headgearClass = "CUP_H_TK_Beret";
 		facewearClass = "";
 		vestClass = "CUP_V_O_Ins_Carrier_Rig_MG";
-		backpackClass = "TFAR_rt1523g";
+		backpackClass = "TFAR_rt1523g_bwmod";
 		
 		linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "ItemMicroDAGR"}; // Linked items for the unit, use for map, compass, radio, watch, gps, and NVGs
 		uniformItems[] = {{"ACE_fieldDressing", 15}, {"ACE_epinephrine", 3},{"ACE_morphine", 5}}; // Items to place in uniform. Includes weapon magazines
@@ -69,7 +69,7 @@ class loadouts
 	{
 		displayName = "Example Loadout"; // Currently unused, basically just a human-readable name for the loadout
 		
-		weapons[] = {"hlc_rifle_SLR", "CUP_hgun_Colt1911", "Binocular"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
+		weapons[] = {"hlc_rifle_FAL5061", "CUP_hgun_Colt1911", "Binocular"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"hlc_20Rnd_762x51_B_fal"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
 		handgunItems[] = {"CUP_7Rnd_45ACP_1911"}; // Handgun items. Includes magazine you want loaded initially.
@@ -78,7 +78,7 @@ class loadouts
 		headgearClass = "CUP_H_TK_Beret";
 		facewearClass = "";
 		vestClass = "CUP_V_O_Ins_Carrier_Rig_MG";
-		backpackClass = "TFAR_rt1523g";
+		backpackClass = "TFAR_rt1523g_bwmod";
 		
 		linkedItems[] = {"ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "ItemcTab"}; // Linked items for the unit, use for map, compass, radio, watch, gps, and NVGs
 		uniformItems[] = {{"ACE_fieldDressing", 15}, {"ACE_epinephrine", 3},{"ACE_morphine", 5}}; // Items to place in uniform. Includes weapon magazines
@@ -100,7 +100,7 @@ class loadouts
 	{
 		displayName = "Example Loadout"; // Currently unused, basically just a human-readable name for the loadout
 		
-		weapons[] = {"hlc_rifle_SLR", "CUP_hgun_Colt1911", "Binocular"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
+		weapons[] = {"hlc_rifle_FAL5061", "CUP_hgun_Colt1911", "Binocular"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"hlc_20Rnd_762x51_B_fal"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
 		handgunItems[] = {"CUP_7Rnd_45ACP_1911"}; // Handgun items. Includes magazine you want loaded initially.
@@ -130,7 +130,7 @@ class loadouts
 	{
 		displayName = "Example Loadout"; // Currently unused, basically just a human-readable name for the loadout
 		
-		weapons[] = {"hlc_rifle_SLR", "CUP_hgun_Colt1911", "Binocular"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
+		weapons[] = {"hlc_rifle_FAL5000", "CUP_hgun_Colt1911", "Binocular"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"hlc_20Rnd_762x51_B_fal"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
 		handgunItems[] = {"CUP_7Rnd_45ACP_1911"}; // Handgun items. Includes magazine you want loaded initially.
@@ -160,7 +160,7 @@ class loadouts
 	{
 		displayName = "Example Loadout"; // Currently unused, basically just a human-readable name for the loadout
 		
-		weapons[] = {"hlc_rifle_SLR", "CUP_hgun_Colt1911", "Binocular"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
+		weapons[] = {"hlc_rifle_FAL5000", "CUP_hgun_Colt1911", "Binocular"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"hlc_20Rnd_762x51_B_fal"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
 		handgunItems[] = {"CUP_7Rnd_45ACP_1911"}; // Handgun items. Includes magazine you want loaded initially.
@@ -190,7 +190,7 @@ class loadouts
 	{
 		displayName = "Example Loadout"; // Currently unused, basically just a human-readable name for the loadout
 		
-		weapons[] = {"hlc_rifle_SLR", "CUP_launch_M72A6", "CUP_hgun_Colt1911", "Binocular"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
+		weapons[] = {"hlc_rifle_FAL5000", "CUP_launch_M72A6", "CUP_hgun_Colt1911", "Binocular"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"hlc_20Rnd_762x51_B_fal"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {"CUP_M72A6_M"}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
 		handgunItems[] = {"CUP_7Rnd_45ACP_1911"}; // Handgun items. Includes magazine you want loaded initially.
@@ -280,7 +280,7 @@ class loadouts
 	{
 		displayName = "Example Loadout"; // Currently unused, basically just a human-readable name for the loadout
 		
-		weapons[] = {"hlc_rifle_SLR", "CUP_hgun_Colt1911", "Binocular"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
+		weapons[] = {"hlc_rifle_FAL5000", "CUP_hgun_Colt1911", "Binocular"}; // Weapons for the unit, fills the primary weapon, launcher, pistol, and binocular slots
 		primaryWeaponItems[] = {"hlc_20Rnd_762x51_B_fal"}; // Primary weapon items. Includes magazine you want loaded initially
 		secondaryWeaponItems[] = {""}; // Secondary weapon items (launchers). Includes magazine you want loaded initially.
 		handgunItems[] = {"CUP_7Rnd_45ACP_1911"}; // Handgun items. Includes magazine you want loaded initially.

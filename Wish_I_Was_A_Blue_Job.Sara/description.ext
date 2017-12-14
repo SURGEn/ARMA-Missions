@@ -1,18 +1,18 @@
 //-------------------- Mission Information
 
-author = "";					// Author name visible on loading screen
-briefingName = "";				// Name visible in mission select screen
+author = "The Ghost of O'Mally";					// Author name visible on loading screen
+briefingName = "Wish I Was A Blue Job V1.0";				// Name visible in mission select screen
 overviewText = "";				// Description visible in mission select screen
 //overviewPicture = "";			// Image visible in mission select screen. Leave commented, still doesn't work properly.
-onLoadName = "";				// Name visible on loading screen
-onLoadMission = "";				// Description visible on loading screen
-//loadScreen = "media\loadscreen.paa"; // Image visible on loading screen
+onLoadName = "Wish I Was A Blue Job";				// Name visible on loading screen
+onLoadMission = "TMTM LARPs as Rhodesians";				// Description visible on loading screen
+loadScreen = "media\rhodies.paa"; // Image visible on loading screen
 
 class Header
 {
 	gameType = COOP;			// https://community.bistudio.com/wiki/Multiplayer_Game_Types
 	minPlayers = 1;				// Minimum amount of players needed for the mission
-	maxPlayers = 16;			// Maximum amount of players the mission supports
+	maxPlayers = 57;			// Maximum amount of players the mission supports
 };
 
 //-------------------- Template Defines
@@ -43,7 +43,7 @@ class Header
 
 // The following variables have no relevance to the game if not used with the rest of the template scripts
 // Edit the values below to change template settings
-XPT_customLoadouts = 0;			// Set to 1 to enable loading custom loadouts for player units
+XPT_customLoadouts = 1;			// Set to 1 to enable loading custom loadouts for player units
 XPT_customVehicleCargo = 0;		// Set to 1 to enable custom vehicle inventories - Currently unused
 XPT_stageDefault = "stage1";	// Set this to whatever stage you want as the default.
 
@@ -59,7 +59,7 @@ allowFunctionsRecompile = 0;	// Always leave this as 0
 
 //-------------------- Misc
 
-disabledAI = 0;					// Disable AI in player slots
+disabledAI = 1;					// Disable AI in player slots
 aiKills = 0;					// Don't show AI units on the leaderboards
 enableItemsDropping = 0;		// Don't drop player items when they swim
 joinUnassigned = 1;				// Don't autoslot players when they join the lobby
@@ -73,14 +73,14 @@ saving = 0;						// Disable saving for multiplayer missions
 
 respawn = 3;					// 3 is BASE respawn
 respawnDelay = 120;				// Respawn delay in seconds
-respawnVehicleDelay = 1800;		// Vehicle respawn delay in seconds
+respawnVehicleDelay = 60;		// Vehicle respawn delay in seconds
 respawnDialog = 0;				// Disables showing scoreboard when respawning
 respawnOnStart = 0;				// Respawns players at the start of the mission. Leave this off for most cases.
 respawnButton = 1;				// Enable the respawn button for players
 
 //-------------------- Respawn Templates
 
-respawnTemplates[] = {"MenuPosition", "Spectator"};				// Templates used for player respawning, applies to all sides
+respawnTemplates[] = {"Spectator", "Counter"};				// Templates used for player respawning, applies to all sides
 //respawnTemplatesWest[] = {"MenuPosition", "Spectator"};		// Templates used for player respawning, applies to BLUFOR only
 //respawnTemplatesEast[] = {"MenuPosition", "Spectator"};		// Templates used for player respawning, applies to OPFOR only
 //respawnTemplatesGuer[] = {"MenuPosition", "Spectator"};		// Templates used for player respawning, applies to Independent only
@@ -205,7 +205,7 @@ class CfgMusic
 	class neverDie
 	{
 		name = "Rhodesians never Die";
-		sound[] = {"media\music\neverDie.ogg", db+0, 1.0};
+		sound[] = {"media\music\neverDie.ogg", db+5, 1.0};
 	};
 	
 	class blueJob

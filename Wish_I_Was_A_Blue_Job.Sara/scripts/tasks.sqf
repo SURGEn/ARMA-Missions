@@ -52,7 +52,7 @@ if (!isServer) exitWith {};
 
 [
 	[true, "zeus_unit"], // Owners of the task. See wiki page for details
-	["Rescue Ian Smith"], // Name of the task, along with parent name. Parent name is used for nested tasks
+	["rescueSmith"], // Name of the task, along with parent name. Parent name is used for nested tasks
 	["It turns out Rhodesians really never do die, Ian Smith is still alive and being held by ZANLA forces, rescue him.", "Rescue Ian Smith", "marker"], // Information about the task. Honestly don't know what the marker does. Leave it blank. Can also use a CfgTaskDescriptions class (class name in string form) instead of this array.
 	getMarkerPos "ianSmithMarker", // Task destination, can also refer to object location. Good method to use is getMarkerPos. Use objNull for task without location.
 	"CREATED", // Task state. Current state of task at the time it's created (usually either "CREATED" or "ASSIGNED")
@@ -64,8 +64,8 @@ if (!isServer) exitWith {};
 
 [
 	[true, "zeus_unit"], // Owners of the task. See wiki page for details
-	["killMugabes"], // Name of the task, along with parent name. Parent name is used for nested tasks
-	["There can be no questions about leadership after our assault. Kill both Robert Mugabe and his wife, Grace Mugabe.", "Kill Mugabes", "marker"], // Information about the task. Honestly don't know what the marker does. Leave it blank. Can also use a CfgTaskDescriptions class (class name in string form) instead of this array.
+	["killMugabe"], // Name of the task, along with parent name. Parent name is used for nested tasks
+	["There can be no questions about leadership after our assault. Kill Robert Mugabe.", "Kill Mugabe", "marker"], // Information about the task. Honestly don't know what the marker does. Leave it blank. Can also use a CfgTaskDescriptions class (class name in string form) instead of this array.
 	getMarkerPos "mugabeMarker", // Task destination, can also refer to object location. Good method to use is getMarkerPos. Use objNull for task without location.
 	"CREATED", // Task state. Current state of task at the time it's created (usually either "CREATED" or "ASSIGNED")
 	10, // Task priority. Taken into account when automatically assigning new tasks when previous tasks are completed.
