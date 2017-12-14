@@ -10,7 +10,7 @@ _this call XPT_fnc_onPlayerRespawn; // DO NOT CHANGE THIS LINE
 
 //player setObjectTextureGlobal [0, "media\camo\rac_co.paa"]; 
 
-[player, [0, "media\camo\rac_co.paa"]] remoteExec ["setObjectTextureGlobal", 0, true];
+//[player, [0, "media\camo\rac_co.paa"]] remoteExec ["setObjectTextureGlobal", 0, true];
 
 {
 	_x setObjectTextureGlobal [0, "media\camo\rac_co.paa"]; 
