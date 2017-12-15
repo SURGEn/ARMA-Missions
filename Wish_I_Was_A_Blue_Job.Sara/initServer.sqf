@@ -18,10 +18,7 @@ _groups = [];
 {_groups pushBackUnique group _x} forEach playableUnits;
 [getMarkerPos "startMarker", _groups] call MLY_fnc_setupMarkers;
 
-/*_allPlayers = playableUnits - allCurators;
-{
-	_x setObjectTextureGlobal [0, "media\camo\shrugs2small.paa"]; 
-} forEach _allPlayers;*/
+
 jet setObjectTextureGlobal [0, "media\camo\Buzzard_1.jpg"]; 
 jet setObjectTextureGlobal [1, "media\camo\Buzzard_2.jpg"]; 
 [box1, transport1] call ace_cargo_fnc_loadItem;
@@ -43,3 +40,7 @@ airstripVehicles = [jet, transport1, transport2, fuelTruck, ammoTruck, repairTru
 doomHouse allowDamage false;
 ianHouse allowDamage false;
 mugabeHouse allowDamage false;
+
+{
+	_x setObjectTextureGlobal [0, "media\camo\rac_co.paa"]; 
+} forEach allPlayers;

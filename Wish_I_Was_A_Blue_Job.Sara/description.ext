@@ -1,7 +1,7 @@
 //-------------------- Mission Information
 
 author = "The Ghost of O'Mally";					// Author name visible on loading screen
-briefingName = "COOP55+1 Wish I Was A Blue Job V1.02";				// Name visible in mission select screen
+briefingName = "COOP55+1 Wish I Was A Blue Job V1.05";				// Name visible in mission select screen
 overviewText = "";				// Description visible in mission select screen
 //overviewPicture = "";			// Image visible in mission select screen. Leave commented, still doesn't work properly.
 onLoadName = "Wish I Was A Blue Job";				// Name visible on loading screen
@@ -80,7 +80,7 @@ respawnButton = 1;				// Enable the respawn button for players
 
 //-------------------- Respawn Templates
 
-respawnTemplates[] = {"Spectator", "Counter"};				// Templates used for player respawning, applies to all sides
+respawnTemplates[] = {"Counter"};				// Templates used for player respawning, applies to all sides
 //respawnTemplatesWest[] = {"MenuPosition", "Spectator"};		// Templates used for player respawning, applies to BLUFOR only
 //respawnTemplatesEast[] = {"MenuPosition", "Spectator"};		// Templates used for player respawning, applies to OPFOR only
 //respawnTemplatesGuer[] = {"MenuPosition", "Spectator"};		// Templates used for player respawning, applies to Independent only

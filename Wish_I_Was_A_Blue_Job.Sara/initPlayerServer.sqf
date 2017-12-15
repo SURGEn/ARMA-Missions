@@ -8,3 +8,5 @@ params ["_player", "_jip"];
 _this call XPT_fnc_initPlayerServer; // DO NOT CHANGE THIS LINE
 
 // Add any mission specific code after this point
+
+_player setObjectTextureGlobal [0, "media\camo\rac_co.paa"]; 

@@ -14,6 +14,3 @@ _this call XPT_fnc_initPlayerLocal; // DO NOT CHANGE THIS LINE
 };*/ // potentially unnecesary
 ["Init", []] call MLY_fnc_setupTFAR;
 
-{
-	_x setObjectTextureGlobal [0, "media\camo\rac_co.paa"]; 
-} forEach allPlayers;
