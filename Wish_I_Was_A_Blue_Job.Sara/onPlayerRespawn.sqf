@@ -10,8 +10,8 @@ _this call XPT_fnc_onPlayerRespawn; // DO NOT CHANGE THIS LINE
 // Add any mission specific code after this point
 
 _newUnit setObjectTextureGlobal [0, "media\camo\rac_co.paa"]; 
-
-[_newUnit, [0, "media\camo\rac_co.paa"]] remoteExec ["setObjectTexture", 0];
+unit = _newUnit;
+[unit, [0, "media\camo\rac_co.paa"]] remoteExec ["setObjectTexture", 0, true];
 
 
 {

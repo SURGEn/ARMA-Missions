@@ -35,6 +35,7 @@ airstripVehicles = [jet, transport1, transport2, fuelTruck, ammoTruck, repairTru
  for "_i" from 0 to count (getAllHitPointsDamage _x select 0) do  
     {  
         if((((getAllHitPointsDamage _x select 0) select _i) find "Glass") != -1) then {_x setHitIndex [_i, 1];};  
+		_x animate [format["Door_%1_rot", _i], 1];
     };  
 } forEach allMissionObjects "House"; 
 doomHouse allowDamage false;
